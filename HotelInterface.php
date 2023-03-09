@@ -1,9 +1,9 @@
 <?php 
 
-interface AnimalInterface {
-    public function falar();
+interface HotelInterface {
+    public function numero();
 
     public function andar();
 
-    public function comer();
 }
+?>

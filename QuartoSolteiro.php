@@ -1,20 +1,22 @@
 <?php 
 
-class Gato extends Animal implements AnimalInterface {
+class Solteiro extends Quarto implements HotelInterface {
 
-    public function __construct($nome, $raca, $idade, $cor) {
-        parent::__construct($nome, $raca, $idade, $cor);
+    public function __construct($dormitorio, $banheiro, $sala, $cozinha) {
+        parent::__construct($dormitorio, $banheiro, $sala, $cozinha);
     }
 
-    public function falar() {
-        echo "O gato fala: Miau Miau Miau <br>";
+    public function numero() {
+        echo "O numero do quarto é 2 <br>";
     }
 
     public function andar() {
-        echo "O gato anda: 4 patas <br>";
+        echo "O quarto está no 8º andar <br>";
     }
 
-    public function comer() {
-        echo "O gato come: Ração <br>";
+
+    public function tipo() {
+        echo "Quarto de solteiro<br>";
     }
 }
+?>

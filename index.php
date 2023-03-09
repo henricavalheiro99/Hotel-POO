@@ -1,30 +1,49 @@
 <?php 
 
-include("AnimalInterface.php");
-include("Animal.php");
-include("Cachorro.php");
-include("Gato.php");
+include("HotelInterface.php");
+include("Quarto.php");
+include("QuartoCasal.php");
+include("QuartoSolteiro.php");
+include("QuartoMaster.php");
 
-$cao = new Cachorro(
-    "Totó",
-    "Vira-lata",
-    5,
-    "Caramelo"
+$quarto1 = new Casal(
+    "cama de casal",
+    "comum",
+    "TV a cabo",
+    "Geladeira e microondas"
 );
 
-$gato = new Gato(
-    "Mingau",
-    "Vira-lata",
-    3,
-    "Branco"
+$quarto2 = new Solteiro(
+    "cama de solteiro",
+    "comum",
+    "TV aberta",
+    "Frigobar"
 );
 
-$cao->falar(); // O animal fala
-$cao->andar();
-$cao->comer();
+$quarto3 = new Master(
+    "2 camas de casal",
+    "Banheira",
+    "TV e videogame",
+    "Cozinha completa"
+);
 
 
-$gato->falar(); // O animal fala
-$gato->andar();
+$quarto1->tipo();
+$quarto1->numero(); 
+$quarto1->andar();
 
-echo "O doguinho chama: " . $cao->getNome() . "<br>";
+echo "<hr>";
+
+$quarto2->tipo();
+$quarto2->numero(); 
+$quarto2->andar();
+
+echo "<hr>";
+
+$quarto3->tipo();
+$quarto3->numero();
+$quarto3->andar();
+
+echo "<hr>";
+
+?>

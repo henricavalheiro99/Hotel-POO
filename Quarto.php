@@ -1,35 +1,41 @@
 <?php 
 
-class Animal {
+class Quarto {
     private $nome;
     private $raca;
     private $idade;
     private $cor;
 
-    public function __construct($nome, $raca, $idade, $cor) {
-        $this->nome = $nome;
-        $this->raca = $raca;
-        $this->idade = $idade;
-        $this->cor = $cor;
+    public function __construct($dormitorio, $banheiro, $sala, $cozinha) {
+        $this->dormitorio = $dormitorio;
+        $this->banheiro = $banheiro;
+        $this->sala = $sala;
+        $this->cozinha = $cozinha;
     }
 
-    public function getNome() {
-        return $this->nome;
+    public function getDorm() {
+        return $this->dormitorio;
     }
 
-    public function getRaca() {
-        return $this->raca;
+    public function getBanh() {
+        return $this->banheiro;
     }
 
-    public function getIdade() {
-        return $this->idade;
+    public function getSala() {
+        return $this->sala;
     }
 
-    public function getCor() {
-        return $this->cor;
+    public function getCoz() {
+        return $this->cozinha;
     }
 
-    public function falar() {
-        echo "O animal fala";
+    public function numero() {
+        echo "Nº 3";
+    }
+
+    public function andar() {
+        echo "Primeiro andar";
     }
 }
+
+?>
